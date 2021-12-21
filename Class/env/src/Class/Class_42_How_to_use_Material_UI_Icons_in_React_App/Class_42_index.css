@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+}
+
+:root {
+  --container_content_color-: rgb(15, 53, 134);
+}
+
+#container_body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(173, 221, 61, 0.664);
+}
+#main_container {
+  width: 25%;
+  height: 55%;
+  border-radius: 20px;
+  background-color: white;
+}
+#nav_value {
+  height: 20%;
+  background-color: var(--container_content_color-);
+  margin-top: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+button {
+  background-color: var(--container_content_color-);
+  color: white;
+  margin: 50px 30px 30px 30px;
+  width: 110px;
+  height: 50px;
+  font-size: 20px;
+  border-width: 0px;
+  border-radius: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: 100ms;
+}
+
+button:hover {
+  background-color: rgb(50, 192, 178);
+}

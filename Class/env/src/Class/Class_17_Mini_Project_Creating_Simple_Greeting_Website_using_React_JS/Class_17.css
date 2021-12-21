@@ -1,0 +1,24 @@
+body {
+  margin: 0px;
+  background: rgba(10, 110, 192, 0.336);
+}
+
+h1 {
+  display: inline-block;
+}
+
+#container {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  padding: 0px 30px;
+  background-color: white;
+  border-radius: 30px;
+  font-size: 23px;
+  font-family: Arial, sans-serif;
+}
+
+#message {
+  color: rgba(192, 10, 80, 0.425);
+}

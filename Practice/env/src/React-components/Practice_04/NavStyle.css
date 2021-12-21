@@ -1,0 +1,14 @@
+.navLink {
+  text-decoration: none;
+  color: red;
+}
+
+.navLinkClass {
+  text-decoration: none;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
