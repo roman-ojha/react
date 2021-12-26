@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.App_Container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(61, 61, 61);
+}
+.App_header {
+  font-size: 3em;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
