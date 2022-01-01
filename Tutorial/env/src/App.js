@@ -3,8 +3,10 @@ import React from "react";
 // import RecoilMain from "./Tut_02_Recoil/RecoilMain";
 import "./App.css";
 // import ReactToastify from "./Tut_03_React_Toastify/ReactToastify";
-// import ReactSpring from "./Tutorial_04_React_Spring/ReactSpring";
-// import ReactSpring2 from "./Tutorial_04_React_Spring/ReactSpring2";
+// import ReactSpring from "./Tut_04_React_Spring/ReactSpring";
+// import ReactSpring2 from "./Tut_04_React_Spring/ReactSpring2";
+import ReactRouterV6 from "./Tut_05_React_Router_V6/ReactRouterV6";
+import {} from "react-router-dom";
 
 const App = () => {
   return (
@@ -14,6 +16,7 @@ const App = () => {
       {/* <ReactToastify /> */}
       {/* <ReactSpring /> */}
       {/* <ReactSpring2 /> */}
+      <ReactRouterV6 />
     </>
   );
 };
