@@ -5,8 +5,8 @@ import "./App.css";
 // import ReactToastify from "./Tut_03_React_Toastify/ReactToastify";
 // import ReactSpring from "./Tut_04_React_Spring/ReactSpring";
 // import ReactSpring2 from "./Tut_04_React_Spring/ReactSpring2";
-import ReactRouterV6 from "./Tut_05_React_Router_V6/ReactRouterV6";
-import {} from "react-router-dom";
+// import ReactRouterV6 from "./Tut_05_React_Router_V6/ReactRouterV6";
+import ReactHelmet from "./Tut_06_React_Helmet_Head_Tag_for_React/ReactHelmet";
 
 const App = () => {
   return (
@@ -16,7 +16,8 @@ const App = () => {
       {/* <ReactToastify /> */}
       {/* <ReactSpring /> */}
       {/* <ReactSpring2 /> */}
-      <ReactRouterV6 />
+      {/* <ReactRouterV6 /> */}
+      <ReactHelmet />
     </>
   );
 };

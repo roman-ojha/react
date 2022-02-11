@@ -1,0 +1,8 @@
+*) /*
+    useEffect(()=>{
+        // the statement that is inside here we will call when component will mount
+        return ()=>{
+            // the statement that is inside here will call when component will unmount
+        }
+    },[])
+*/
