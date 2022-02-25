@@ -23,7 +23,7 @@ Server-side rendering (SSR) is a popular technique for rendering a client-side s
         -> (SSR) is a popular technique for rendering a normal client-side app on the server and then sending a fully rendered page to the client.
     => Benefits?
         -> One major benefit of using SSR is in having an app that can be crowled sor Search Engin which help for SEO
-        -> SSR can also ofthn help with peroformance because a fully loaded app is sent down from the server on the first request
+        -> SSR can also often help with peroformance because a fully loaded app is sent down from the server on the first request
     => SSR in React.js?
         -> Hydrate instead of render
         -> Use ReactDOMServer renderToString
