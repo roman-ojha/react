@@ -20,6 +20,21 @@ const ReactToastify = () => {
       draggable: true,
       progress: undefined,
     });
+
+  // With Promise
+  const res = await toast.promise(
+    fetch("/changeProfile/imgUrl", {
+      method: "POST",
+      body: {
+        imageUrl,
+      },
+    }),
+    {
+      pending: "Pending",
+      success: "Success",
+      error: "Error",
+    }
+  );
   return (
     <div>
       <div
