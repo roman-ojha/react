@@ -1,0 +1,4 @@
+-> npx create-react-app <app_name> (to initialized react app)
+-> npx create-react-app . (to initialized react app in current working directory name)
+-> npx create-react-app --template typescript <app_name> (creating react app with typescript)
+- npm install --save typescript @types/node @types/react @types/react-dom @types/jest (To add TypeScript to an existing Create React App project,)
