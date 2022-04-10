@@ -1,0 +1,30 @@
+*) useEffect(()=>{
+    // run when components get mount
+    return ()=>{
+        // run when components get unmount
+    }
+},[])
+
+*) useRef:
+    -> const value=useRef(initial_Value);
+    -> value.current=10; // will change the value but will not re render the components
+
+*) useState:
+    -> const [value,setValue] = useState(initial_Value);
+    -> setValue("Hello"); // will change the value and rerender the components
+
+
+*) 
+    -> const [value,setValue]= useState(initial_Value);
+    -> useEffect(()=>{
+        setValue("hello"); // will set the value 'hello' on a continuous loop
+        },[])
+
+
+*) 
+    -> let use say that 'newState' is the global state:
+        -> Parent Components // access 'newState' here will rerender all components
+            |
+            -> Child Components // access 'newState' here will rerender child component
+            |
+            -> Child Components
