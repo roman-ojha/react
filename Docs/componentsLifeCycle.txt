@@ -28,3 +28,5 @@
             -> Child Components // access 'newState' here will rerender child component
             |
             -> Child Components
+    
+    -> Conclusion: Try to use global state where it is needed rather then accessing it directly to the main parent component
