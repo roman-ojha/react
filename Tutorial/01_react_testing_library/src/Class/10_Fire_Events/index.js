@@ -6,7 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
 /*
-->
+-> now here we will learn how we can interact with the element  
+-> so now here we will make a test for 'AddInput' component
 */
 
 ReactDOM.render(
