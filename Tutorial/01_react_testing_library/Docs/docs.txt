@@ -1,1 +1,10 @@
 https://youtu.be/7dTTFW7yACQ?list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ
+
+*) Different type of test:
+    1) UNIT
+    2) E2E
+    3) Integration
+    4) Performance
+    5) Smoke
+    6) Functional
+    7) Acceptance
