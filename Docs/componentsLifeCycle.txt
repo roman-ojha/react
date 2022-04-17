@@ -30,3 +30,6 @@
             -> Child Components
     
     -> Conclusion: Try to use global state where it is needed rather then accessing it directly to the main parent component
+    
+*) Re-render part of component upon state change:
+    -> Make the component as a saperate component, keep value of that component as a global state, which can be accessed by this separate component.
