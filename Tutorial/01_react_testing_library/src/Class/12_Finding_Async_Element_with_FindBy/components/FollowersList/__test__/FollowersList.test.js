@@ -26,4 +26,5 @@ describe("FollowersList", () => {
     const followerDivElement = await screen.findAllByTestId(/follower-item/i);
     expect(followerDivElement.length).toBe(5);
   });
+  // NOTE: this way is not the best practice to do things so we will implement much better approach in next tut
 });
