@@ -1,3 +1,5 @@
+### Credit: [Eric The Coder](https://dev.to/ericchapman)
+
 # Create a React App
 
 ```javascript
@@ -267,7 +269,8 @@ function App(){
 } 
 ```
 
-<!-- Props object destructuring
+# Props object destructuring
+```javascript
 function App(){
   return people.map(person => <Person key={person.id} {...person} />)
 }
@@ -277,7 +280,10 @@ const Person = ({name, age}) => {
       <h1>Name: {name}, Age: {age}</h1>
   )
 } 
-Click Event
+```
+
+# Click Event
+```javascript
 const clickHandler = () => alert('Hello World')
 function App(){
     return (
@@ -287,7 +293,9 @@ function App(){
         </> 
     )
 } 
-or inline...
+```
+### or inline...
+```javascript
 function App(){
     return (
         <>
@@ -295,8 +303,11 @@ function App(){
             <button onClick={ () => alert('Hello World') }>Say Hi</button>
         </>
      )
-} 
-To pass arguments we need to use arrow function
+}
+```
+
+### To pass arguments we need to use arrow function
+```javascript
 const clickHandler = (message) => alert(message)
 function App(){
     return (
@@ -306,7 +317,9 @@ function App(){
         </> 
     )
 } 
-e for event arguments
+```
+### e for event arguments
+```javascript
 const clickHandler = (e) => console.log(e.target)
 function App(){
     return (
@@ -316,7 +329,9 @@ function App(){
         </> 
     )
 } 
-Pass event from child to parent
+```
+### Pass event from child to parent
+```javascript
 function Todo({item, onDelete}) {
     return (
       <div>
@@ -338,14 +353,18 @@ function Todos() {
     }
   )
 }
-useState Hook
-The purpose of useState is to handle reactive data. any data that changes in the application is called state. And when the state changes, you want react to update the UI.
+```
 
-Hook always start with 'use' prefix
-Must be invoke only in a React component/function
-Must be call at top level of a functional component
-Declaration cannot be call conditionally
-useState return an array of 2: [state value, set state function]
+# useState Hook
+### The purpose of useState is to handle reactive data. any data that changes in the application is called state. And when the state changes, you want react to update the UI.
+
+* Hook always start with 'use' prefix
+* Must be invoke only in a React component/function
+* Must be call at top level of a functional component
+* Declaration cannot be call conditionally
+* useState return an array of 2: [state value, set state function]
+
+```javascript
 import React, {useState} from 'react';
 
 const DisplayTitle = () => {
@@ -360,7 +379,10 @@ const DisplayTitle = () => {
 };
 
 export default DisplayTitle;
-useState with object
+```
+
+# useState with object
+```javascript
 const DisplayTitle = () => {
   const [person, setPerson] = useState({name: 'Mike', age: 29})
   const handleClick = () => setPerson({...person, age: 35})
@@ -371,7 +393,10 @@ const DisplayTitle = () => {
     </button>
   </>
 };
-setState functional form
+```
+
+# setState functional form
+```javascript
 function Counter() {
   const [count, setCount] = useState(0)
   // Use a function to set State
@@ -385,12 +410,15 @@ function Counter() {
     </>
   )
 }
-useEffect
+```
+
+# useEffect
 In React you may want to execute code after lifecycle events or side effects.
 
 By default useEffect function is execute after every re-render. You can then execute code everytime component update.
 import React, { useEffect } from 'react';
 
+```javascript
 function IncreaseValue() {
     const [value, setValue] = useState(0)
     useEffect(() => {
@@ -398,18 +426,24 @@ function IncreaseValue() {
     })
     return <button onClick={() => setValue(value + 1)}>Increase</button>
 }
-Conditional useEffect
-Conditional need to be place inside useEffect function
+```
+
+# Conditional useEffect
+### Conditional need to be place inside useEffect function
+```javascript
 useEffect(() => {
     if (value > 0) {
         document.title = `New value: ${value}` 
     }
 })
-useEffect Dependency List
-What if you want to execute code only on first render or only when a particular state change? You can use the useEffect function and send an array of dependencies as parameter.
+```
 
-useEffect will run only if state is in the Dependency List.
-If the list is empty [] the useEffect will only run on initial render.
+# useEffect Dependency List
+### What if you want to execute code only on first render or only when a particular state change? You can use the useEffect function and send an array of dependencies as parameter.
+
+### useEffect will run only if state is in the Dependency List.
+### If the list is empty [] the useEffect will only run on initial render.
+```javascript
 useEffect(() => {
     document.title = `New value: ${value}` 
 }, [])
@@ -419,19 +453,25 @@ useEffect(() => {
     document.title = `New value: ${value}` 
 }, [value])
 // Will run each time 'value' state change.
-useEffect cleanup function
-What if you want to execute code each time the component unmount?
+```
 
-To execute code only when a component is unmount/destroy you need to add a 'return' statement to your useEffect function.
+# useEffect cleanup function
+### What if you want to execute code each time the component unmount?
+
+### To execute code only when a component is unmount/destroy you need to add a 'return' statement to your useEffect function.
+```javascript
 useEffect(() =>  { 
     const timer = window.setInterval(() => { 
         setCount(count => count + 1)
     }, 1000)
     return () => clearInterval(timer)
 }, [])
-The code 'clearInterval(timer)' will only be execute before component is remove from UI (unmount)
+```
 
-Conditional Rendering
+### The code 'clearInterval(timer)' will only be execute before component is remove from UI (unmount)
+
+# Conditional Rendering
+```javascript
 function DisplayGreeting() {
     const [name, setName] = useState('Mike')
     if (name === 'Mike') {
@@ -439,16 +479,22 @@ function DisplayGreeting() {
     }
     return <h1>Hello user {name}</h1> 
 }
-Inline If-Else
+```
+
+### Inline If-Else
+```javascript
   return (
     <div>
       The user is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in.
     </div>
   );
 }
-Inline Logical && Operator.
-Display only if first expression is truthy
-truthy = Not : 0, "", null, undefined, and NaN
+```
+
+### Inline Logical && Operator.
+### Display only if first expression is truthy
+### truthy = Not : 0, "", null, undefined, and NaN
+```javascript
   function DisplayUserInfo({active}) {
     return (
       <div>
@@ -456,9 +502,15 @@ truthy = Not : 0, "", null, undefined, and NaN
       </div>
     );
 }
-Multiple inline If
+```
+
+### Multiple inline If
+```html
 <span className={count === 0 && 'text-gray-500' || count > 0 && 'text-green-500' || count < 0 && 'text-red-500'}>{count}</span>
-Form
+```
+
+# Form
+```javascript
 const UserForm = () => {
   const [userName, setUserName] = useState('')
   const handleSubmit = (e) => {
@@ -481,8 +533,11 @@ return (
 };
 
 export default UserForm;
-useRef
-useRef is mostly use to target a DOM element. But it can also be use to keep/preserve a mutable value between each render. useRef does not trigger a re-render (like a useState).
+```
+
+# useRef
+### useRef is mostly use to target a DOM element. But it can also be use to keep/preserve a mutable value between each render. useRef does not trigger a re-render (like a useState).
+```javascript
 const UseRefBasics = () => {
   const refContainer = useRef(null)
   const handleSubmit = (e) => {
@@ -504,4 +559,5 @@ const UseRefBasics = () => {
       </form>
     </div>
   )
-}; -->
+};
+```
