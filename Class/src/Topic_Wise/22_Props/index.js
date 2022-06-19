@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Card from "./React-components/Card";
-import "./index.css";
 
 /*
   -> When you will go to the inspect of the browser and in Element tag if we click on some element tag then we will see something like :
