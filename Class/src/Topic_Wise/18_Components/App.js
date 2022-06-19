@@ -1,7 +1,7 @@
 import React from "react";
-import Heading from "./Heading";
-import Paragraph from "./Paragraph";
-import OrderList from "./OrderList";
+import Heading from "./React-components/Heading";
+import Paragraph from "./React-components/Paragraph";
+import OrderList from "./React-components/OrderList";
 
 function App() {
   return (

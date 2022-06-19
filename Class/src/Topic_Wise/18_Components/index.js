@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 
 /*
 In react we can be able too split the whole code into components and after that we can call those component when we needed
@@ -37,7 +36,7 @@ Rule:
 import Heading from "./React-components/Heading";
 import Paragraph from "./React-components/Paragraph";
 import OrderList from "./React-components/OrderList";
-import App from ".App";
+import App from "./App";
 
 ReactDOM.render(
   <>

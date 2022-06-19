@@ -27,7 +27,7 @@ ReactDOM.render(
     <h1 contentEditable="true">My name is {name}</h1>
     <img src={imgLink1} alt="Dummy Image" />
     <img src={imgLink2} alt="Dummy Image" />
-    <a href={youtubeLink} target="_blank">
+    <a href={youtubeLink} target="_blank" rel="noreferrer">
       <img src={imgLink3} alt="Dummy Image" />
     </a>
   </>,
