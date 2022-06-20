@@ -9,4 +9,4 @@
 //   document.getElementById("root")
 // );
 
-import "./Topic_Wise/23_Arrays_in_React/index";
+import "./Topic_Wise/28_Slot_Machine_Game/index";
