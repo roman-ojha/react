@@ -1,0 +1,6 @@
+[submodule "Readux"]
+	path = Readux
+	url = https://github.com/Roman-Ojha/react-redux.git
+[submodule "Redux"]
+	path = Redux
+	url = https://github.com/Roman-Ojha/react-redux.git
