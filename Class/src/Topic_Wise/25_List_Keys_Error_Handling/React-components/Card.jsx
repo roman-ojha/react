@@ -5,7 +5,7 @@ function Card(props) {
   return (
     <>
       {/* ------------------------------------------------------- */}
-      <a href={props.link} target="_blank">
+      <a href={props.link} target="_blank" rel="noreferrer">
         <div className="cards">
           <div className="card">
             {/* So now we can make another component of image but we know that we have used 'porps' in that image component so,*/}
