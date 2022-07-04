@@ -9,4 +9,4 @@
 //   document.getElementById("root")
 // );
 
-import "./Topic_Wise/68_Hooks_Update/index";
+import "./Topic_Wise/69_Method_as_Props/index";
