@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./React-components/Card";
+import Card from "./components/Card";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {

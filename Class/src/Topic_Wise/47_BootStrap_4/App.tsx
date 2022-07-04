@@ -20,13 +20,13 @@ const App = () => {
     <>
       <button className="btn btn-primary">Hollo world</button>
       {/* ---------------------------------------------------- */}
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
             Navbar
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -34,23 +34,23 @@ const App = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Link
                 </a>
               </li>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -59,122 +59,125 @@ const App = () => {
                 >
                   Dropdown
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a className="dropdown-item" href="#">
                       Action
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a className="dropdown-item" href="#">
                       Another action
                     </a>
                   </li>
                   <li>
-                    <hr class="dropdown-divider" />
+                    <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a className="dropdown-item" href="#">
                       Something else here
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a
-                  class="nav-link disabled"
+                  className="nav-link disabled"
                   href="#"
-                  tabindex="-1"
+                  tabIndex={-1}
                   aria-disabled="true"
                 >
                   Disabled
                 </a>
               </li>
             </ul>
-            <form class="d-flex">
+            <form className="d-flex">
               <input
-                class="form-control me-2"
+                className="form-control me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button className="btn btn-outline-success" type="submit">
                 Search
               </button>
             </form>
           </div>
         </div>
       </nav>
-      <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">
+      <div className="input-group mb-3">
+        <span className="input-group-text" id="basic-addon1">
           @
         </span>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           placeholder="Username"
           aria-label="Username"
           aria-describedby="basic-addon1"
         />
       </div>
 
-      <div class="input-group mb-3">
+      <div className="input-group mb-3">
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           placeholder="Recipient's username"
           aria-label="Recipient's username"
           aria-describedby="basic-addon2"
         />
-        <span class="input-group-text" id="basic-addon2">
+        <span className="input-group-text" id="basic-addon2">
           @example.com
         </span>
       </div>
 
-      <label for="basic-url" class="form-label">
+      <label htmlFor="basic-url" className="form-label">
         Your vanity URL
       </label>
-      <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon3">
+      <div className="input-group mb-3">
+        <span className="input-group-text" id="basic-addon3">
           https://example.com/users/
         </span>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="basic-url"
           aria-describedby="basic-addon3"
         />
       </div>
 
-      <div class="input-group mb-3">
-        <span class="input-group-text">$</span>
+      <div className="input-group mb-3">
+        <span className="input-group-text">$</span>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           aria-label="Amount (to the nearest dollar)"
         />
-        <span class="input-group-text">.00</span>
+        <span className="input-group-text">.00</span>
       </div>
 
-      <div class="input-group mb-3">
+      <div className="input-group mb-3">
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           placeholder="Username"
           aria-label="Username"
         />
-        <span class="input-group-text">@</span>
+        <span className="input-group-text">@</span>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           placeholder="Server"
           aria-label="Server"
         />
       </div>
 
-      <div class="input-group">
-        <span class="input-group-text">With textarea</span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
+      <div className="input-group">
+        <span className="input-group-text">With textarea</span>
+        <textarea
+          className="form-control"
+          aria-label="With textarea"
+        ></textarea>
       </div>
     </>
   );

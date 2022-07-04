@@ -1,7 +1,7 @@
 import React, { createContext } from "react";
 
 // here we are importing component A and Component A is importing ComponentB and ComponentB is importing ComponentC
-import ComponentA from "./React-components/ComponentA";
+import ComponentA from "./components/ComponentA";
 /*
     | Parent Component | -> | Child Components A | -> | Child Components B | -> | Child Compnents C |
 
