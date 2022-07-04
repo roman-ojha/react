@@ -9,4 +9,4 @@
 //   document.getElementById("root")
 // );
 
-import "./Topic_Wise/14_CSS_Styling/index";
+import "./Topic_Wise/34_Controlled_VS_Uncontrolled_Component/index";
