@@ -31,12 +31,12 @@ NOTE: you can also add font awesome icon to do that you can to search 'font awso
 
 */
 
-const App = () => {
-  const [currentValue, updateValue] = useState(0);
-  const increment = () => {
+const App = (): JSX.Element => {
+  const [currentValue, updateValue] = useState<number>(0);
+  const increment = (): void => {
     updateValue(currentValue + 1);
   };
-  const decrement = () => {
+  const decrement = (): void => {
     if (currentValue > 0) {
       updateValue(currentValue - 1);
     } else {

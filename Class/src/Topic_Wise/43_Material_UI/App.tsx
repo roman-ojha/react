@@ -19,12 +19,12 @@ import Tooltip from "@material-ui/core/Tooltip";
   -> now we have to import liek material ui icon
  */
 
-const App = () => {
-  const [currentValue, updateValue] = useState(0);
-  const increment = () => {
+const App = (): JSX.Element => {
+  const [currentValue, updateValue] = useState<number>(0);
+  const increment = (): void => {
     updateValue(currentValue + 1);
   };
-  const decrement = () => {
+  const decrement = (): void => {
     if (currentValue > 0) {
       updateValue(currentValue - 1);
     } else {
