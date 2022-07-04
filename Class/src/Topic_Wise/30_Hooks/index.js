@@ -4,6 +4,11 @@ import App from "./App";
 import "./index.css";
 
 /*
+        -> previously above react v16 on functional component you couldn't be able to work with hooks and functional component will get called as stateless component 
+        -> but now from v16.7.0-alpha react introduce hooks
+*/
+
+/*
     1) Hooks are the new feature introduced in the React 16.8 version.
     2) it allows you to use state and other React features without writing a class. Hooks are the functions which 'hook into' react state and lifecycle feature from function components.
     3) priviously devloper use to use class but now most of them use Hooks
