@@ -39,6 +39,7 @@ ReactDOM.render(
   <>
     <h1
       style={{
+        // now This is inline Css
         color: "#fa9191",
         textAlign: "center",
         textTransform: "capitalize",
@@ -46,7 +47,6 @@ ReactDOM.render(
         textShadow: "0px 2px 4px #ffe9c5",
         margin: "50px 0px",
         fontFamily: '"Josefin Slab",serif',
-        // now This is inline Css
       }}
     >
       My name is {name}
