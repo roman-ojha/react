@@ -9,4 +9,4 @@
 //   document.getElementById("root")
 // );
 
-import "./Topic_Wise/08_React_Fragment/index";
+import "./Topic_Wise/70_Memo/index";
