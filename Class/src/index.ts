@@ -9,4 +9,4 @@
 //   document.getElementById("root")
 // );
 
-import "./Topic_Wise/51_Context_API/index";
+import "./Topic_Wise/69_Component_Lifecycle_Methods/index";
