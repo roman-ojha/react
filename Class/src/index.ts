@@ -9,4 +9,4 @@
 //   document.getElementById("root")
 // );
 
-import "./Topic_Wise/71_useMemo/index";
+import "./Topic_Wise/73_Portals/index";
