@@ -1,0 +1,24 @@
+In a typical Next.js/React.js application with Redux, the logic for fetching data from the backend and storing it can be divided between the Redux layer and the React component layer. Here's a general guideline for handling data fetching and storing:
+
+React Component Layer:
+
+Components are responsible for rendering UI and handling user interactions.
+The component layer can initiate the data fetching process by dispatching an action to Redux.
+Components can subscribe to the Redux store to access the fetched data for rendering.
+Component-specific state (not application-level state) can be managed using React's local state (useState hook).
+Redux Layer:
+
+Redux is responsible for managing the global application state.
+Create actions and action creators to describe the data fetching process.
+Dispatch these actions from React components to trigger the data fetching process.
+Use middleware like Redux Thunk or Redux Saga to handle asynchronous operations.
+The middleware intercepts the dispatched actions, performs the API requests, and dispatches new actions with the fetched data.
+Create reducers to handle these actions and update the Redux store accordingly.
+The fetched data is stored in the Redux store and can be accessed by components through selectors.
+So, the overall flow is as follows:
+
+The React component triggers a data fetching action by dispatching it to Redux.
+The middleware intercepts the action, performs the API request (GET, POST, etc.), and dispatches new actions (e.g., success, failure) with the fetched data.
+The corresponding reducer updates the Redux store with the fetched data.
+React components subscribed to the relevant data in the Redux store re-render and access the updated data for rendering.
+By following this approach, you separate concerns and keep the data fetching and storing logic in the Redux layer, while the React components focus on rendering UI and handling user interactions.
