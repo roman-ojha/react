@@ -6,10 +6,11 @@
     "moduleResolution": "node",
     "baseUrl": "./",
     "jsx": "react-jsx",
-    "typeRoots": ["./types", "./node_modules/@types"],
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ],
     "resolveJsonModule": true,
-    "allowJs": true,
-    "checkJs": false,
     "declaration": true,
     "sourceMap": true,
     "outDir": "./dist",
@@ -19,16 +20,29 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "skipLibCheck": true,
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "allowJs": true
   },
   "ts-node": {
     "esm": true
   },
-  "exclude": ["node_modules", "dist", "build"],
-  "include": ["./src/*", "./", "./src/types"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build"
+  ],
+  "include": [
+    "./src/*",
+    "./",
+    "./src/types"
+  ]
 }
