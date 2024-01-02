@@ -1,0 +1,4 @@
+-> './components/Status.tsx'
+-> './components/Heading.tsx'
+-> './components/Oscar.tsx'
+-> './components/Greet.tsx'
