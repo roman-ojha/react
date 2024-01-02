@@ -1,0 +1,1 @@
+-> './src/App.tsx', './src/components/Greet.tsx'
