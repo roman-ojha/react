@@ -7,7 +7,11 @@ function wait(time: number) {
     setTimeout(resolve, time);
   });
 }
-const Admin = lazy(() => wait(2000).then(() => import("./Admin")));
+// const Admin = lazy(() => wait(2000).then(() => import("./Admin")));
+
+// create you own lazy loading that can be reusable
+import { lazyLoad } from "@/lib/lazyLoad";
+const Admin = lazyLoad("./Admin.tsx", null);
 
 const AdvancedCodeSplittingConcepts = (): React.JSX.Element => {
   const [isAdmin, setIsAdmin] = useState(false);

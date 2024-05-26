@@ -58,7 +58,7 @@ export default function LazyLoading() {
           <h2>Preview</h2>
           {/* Let's just say that this component render time is lot higher then the other in that case we will lazy load this component so that the render will be fast on other part of this 'Home' component but this component will only lazy load */}
           <MarkdownPreview markdown={markdown} />
-          {/* But let's say that this component fails to get loaded in that case we can use error boundaries */}
+          {/* But let's say that this component fails to get loaded in that case we can use error boundaries, Continue: https://youtu.be/IBrmsyy9R94?t=468 */}
           <About />
         </Suspense>
       )}

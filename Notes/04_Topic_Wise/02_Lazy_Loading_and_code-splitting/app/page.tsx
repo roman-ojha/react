@@ -9,7 +9,7 @@ export default function Home() {
       {/* <CodeSplittingFunction /> */}
       {/* <LazyLoading /> */}
       {/* <ConditionalCodeSplitting /> */}
-      <AdvancedCodeSplittingConcepts />
+      {/* <AdvancedCodeSplittingConcepts /> */}
     </>
   );
 }
