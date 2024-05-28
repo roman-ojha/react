@@ -3,6 +3,7 @@ import UseTransitionHook from "@/components/02_useTransitionHook/useTransitionHo
 import UseTransitionWithLazyLoading from "@/components/02_useTransitionHook/useTransition_with_LazyLoading/Home";
 import UseDeferredValue from "@/components/03_useDeferredValue/useDeferredValueHook";
 import UseLayoutEffectHook from "@/components/04_useLayoutEffectHook/useLayoutEffectHook";
+import UseIdHook from "@/components/05_useIdHook/useIdHook";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       {/* <UseTransitionHook /> */}
       {/* <UseTransitionWithLazyLoading /> */}
       {/* <UseDeferredValue /> */}
-      <UseLayoutEffectHook />
+      {/* <UseLayoutEffectHook /> */}
+      <UseIdHook />
     </>
   );
 }
