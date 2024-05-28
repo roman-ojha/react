@@ -8,6 +8,7 @@ import UseEffectEventHook from "@/components/06_useEffectEvent_Hook/useEffectEve
 import UseHookWithFetch from "@/components/07_use_Hook/01_use_with_fetch/useHook";
 import UseFormStatusHook from "@/components/08_useFormStatus_Hook/useFormStatusHook";
 import UseOptimisticHook from "@/components/09_useOptimistic_Hook/useOptimisticHook";
+import CustomHooks from "@/components/10_Custom_Hooks";
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
       {/* <UseEffectEventHook /> */}
       {/* <UseHookWithFetch /> */}
       {/* <UseFormStatusHook /> */}
-      <UseOptimisticHook />
+      {/* <UseOptimisticHook /> */}
+      <CustomHooks />
     </>
   );
 }
