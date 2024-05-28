@@ -6,6 +6,7 @@ import UseLayoutEffectHook from "@/components/04_useLayoutEffectHook/useLayoutEf
 import UseIdHook from "@/components/05_useIdHook/useIdHook";
 import UseEffectEventHook from "@/components/06_useEffectEvent_Hook/useEffectEventHook";
 import UseHookWithFetch from "@/components/07_use_Hook/01_use_with_fetch/useHook";
+import UseFormStatusHook from "@/components/08_useFormStatus_Hook/useFormStatusHook";
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
       {/* <UseLayoutEffectHook /> */}
       {/* <UseIdHook /> */}
       {/* <UseEffectEventHook /> */}
-      <UseHookWithFetch />
+      {/* <UseHookWithFetch /> */}
+      <UseFormStatusHook />
     </>
   );
 }
