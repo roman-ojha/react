@@ -4,6 +4,7 @@ import UseTransitionWithLazyLoading from "@/components/02_useTransitionHook/useT
 import UseDeferredValue from "@/components/03_useDeferredValue/useDeferredValueHook";
 import UseLayoutEffectHook from "@/components/04_useLayoutEffectHook/useLayoutEffectHook";
 import UseIdHook from "@/components/05_useIdHook/useIdHook";
+import UseEffectEventHook from "@/components/06_useEffectEvent_Hook/useEffectEventHook";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       {/* <UseTransitionWithLazyLoading /> */}
       {/* <UseDeferredValue /> */}
       {/* <UseLayoutEffectHook /> */}
-      <UseIdHook />
+      {/* <UseIdHook /> */}
+      <UseEffectEventHook />
     </>
   );
 }
