@@ -5,6 +5,7 @@ import UseDeferredValue from "@/components/03_useDeferredValue/useDeferredValueH
 import UseLayoutEffectHook from "@/components/04_useLayoutEffectHook/useLayoutEffectHook";
 import UseIdHook from "@/components/05_useIdHook/useIdHook";
 import UseEffectEventHook from "@/components/06_useEffectEvent_Hook/useEffectEventHook";
+import UseHookWithFetch from "@/components/07_use_Hook/01_use_with_fetch/useHook";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       {/* <UseDeferredValue /> */}
       {/* <UseLayoutEffectHook /> */}
       {/* <UseIdHook /> */}
-      <UseEffectEventHook />
+      {/* <UseEffectEventHook /> */}
+      <UseHookWithFetch />
     </>
   );
 }
