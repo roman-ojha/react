@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@preact/signals-react": "^2.0.1",
     "@types/remarkable": "^2.0.8",
     "next": "14.2.3",
     "react": "^18",
